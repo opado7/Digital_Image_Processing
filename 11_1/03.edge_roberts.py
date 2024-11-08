@@ -12,7 +12,7 @@ def differential(image, data1, data2):
     dst2 = np.clip(dst2, 0, 255).astype("uint8")
     return dst1, dst2
 
-image = cv2.imread("images/edge.jpg", cv2.IMREAD_GRAYSCALE)
+image = cv2.imread("../images/edge.jpg", cv2.IMREAD_GRAYSCALE)
 if image is None: raise Exception("영상파일 읽기 오류")
     
 data1 = [-1, 0, 0,  # 수치만 바꾸면 마스크가 바뀜

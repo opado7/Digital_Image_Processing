@@ -32,7 +32,7 @@ def filter2(image, mask):
             dst[i, j] = sum
     return dst
 
-image = cv2.imread("images/filter_blur.jpg", cv2.IMREAD_GRAYSCALE)  # 영상 읽기
+image = cv2.imread("../images/filter_blur.jpg", cv2.IMREAD_GRAYSCALE)  # 영상 읽기
 if image is None: raise Exception("영상파일 읽기 오류")
 
 # 블러링 마스크 원소 지정

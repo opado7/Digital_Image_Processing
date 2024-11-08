@@ -16,7 +16,7 @@ def getGaussianMask(ksize, sigmaX, sigmaY):
     mask = ratio * np.exp(-(v1+v2))
     return mask / np.sum(mask)
 
-image = cv2.imread("images/smoothing.jpg", cv2.IMREAD_GRAYSCALE)
+image = cv2.imread("../images/smoothing.jpg", cv2.IMREAD_GRAYSCALE)
 if image is None: raise Exception("영상파일 읽기 오류")
 
 ksize = (5, 17)                                        # 크기는 가로x세로로 표현
